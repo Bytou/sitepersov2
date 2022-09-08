@@ -19,12 +19,46 @@
     z-index: -100;
 }
 
+.parts {
+    position: absolute;
+    left: 75vw;
+    width: 20vw;
+    .list {
+        height: 100vh;
+        margin-top: 10vh;
+        margin-bottom: 10vh;
+        .listElement{
+            padding-top: 5%;
+            padding-bottom: 5%;
+            height: 70px;
+            vertical-align: middle;
+            p {
+                transition: transform .2s;
+                padding-top: 10px;
+                position: relative;
+                text-align: center;
+                font-size: 35px;
+                height: 75%;
+                border: 1px solid $grey;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
+            }
+            :hover {
+                cursor: pointer;
+                transform: scale(1.2); 
+            }
+        }
+    }
+}
+
+
+
 .infos {
     width: 35vw;
     height: 70vh;
     position: absolute;
     left: calc(35vw / 3 * 1.5);
-    padding-top: 5%;
+    padding-top: 7%;
     text-align: center;
     .image {
         img {
