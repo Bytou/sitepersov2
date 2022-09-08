@@ -1,0 +1,43 @@
+@import "../styles/variables";
+
+@mixin circle($width, $height, $color, $x, $y) {
+    width: $width;
+    height: $height;
+    position: absolute;
+    background: $color;
+    -webkit-border-radius: $width/2;
+    -moz-border-radius: $width/2;
+    border-radius: $width/2;
+    top: calc($x - $height/2);
+    left: calc($y - $width/2);
+    z-index: -100;
+
+}
+
+.circle {
+    @include circle(140vw, 250vh, $backColor, 50%, -10px);
+    z-index: -100;
+}
+
+.infos {
+    width: 35vw;
+    height: 70vh;
+    position: absolute;
+    left: calc(35vw / 3 * 1.5);
+    padding-top: 5%;
+    text-align: center;
+    .image {
+        img {
+            width: auto;
+            height: 50vh;
+        }
+    };
+    .name {
+        font-size:30px;
+    };
+    .desc {
+        font-size: 25px;
+        color: $grey;
+    }
+}
+
