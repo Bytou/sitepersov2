@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AssoComponent implements OnInit {
 
+  name = "Expériences Associatives"
+
   constructor() { }
 
   ngOnInit(): void {

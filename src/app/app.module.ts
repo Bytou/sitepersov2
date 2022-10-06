@@ -1,12 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
-import { ProComponent } from './components/subsection/pro/pro.component';
-import { AssoComponent } from './components/subsection/asso/asso.component';
-import { TechnoComponent } from './components/subsection/techno/techno.component';
-import { ContactComponent } from './components/subsection/contact/contact.component';
+import { ProComponent } from './components/pro/pro.component';
+import { AssoComponent } from './components/asso/asso.component';
+import { TechnoComponent } from './components/techno/techno.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormationsComponent } from './components/formations/formations.component';
+import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
+const routes: Routes = [
+  { path: "formation", component: FormationsComponent},
+  { path: "pro", component: ProComponent},
+  { path: "asso", component: AssoComponent},
+  { path: "techno", component: TechnoComponent},
+  { path: "contact", component: ContactComponent},
+  { path: "", component: HomeComponent}
+];
 
 @NgModule({
   declarations: [
@@ -15,13 +26,16 @@ import { ContactComponent } from './components/subsection/contact/contact.compon
     ProComponent,
     AssoComponent,
     TechnoComponent,
-    ContactComponent
-],
+    ContactComponent,
+    FormationsComponent,
+    NavbarComponent
+  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    RouterModule.forRoot(routes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [RouterModule]
 })
 export class AppModule { }
