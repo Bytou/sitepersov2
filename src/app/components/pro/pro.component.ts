@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProComponent implements OnInit {
 
+  name = "Expériences Professionnelles"
+
   constructor() { }
 
   ngOnInit(): void {
