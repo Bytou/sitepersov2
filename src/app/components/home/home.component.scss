@@ -8,8 +8,8 @@
     -webkit-border-radius: $width/2;
     -moz-border-radius: $width/2;
     border-radius: $width/2;
-    top: calc($x - $height/2);
-    left: calc($y - $width/2);
+    top: calc($x - calc($height/2));
+    left: calc($y - calc($width/2));
     z-index: -100;
 
 }
