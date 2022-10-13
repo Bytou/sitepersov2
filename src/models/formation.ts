@@ -1,6 +1,8 @@
+import { timeStamp } from "console";
+
 export class Formation {
 
-    name : string;
+    title : string;
     begin : Date;
     end : Date;
     etablishment : string;
@@ -8,8 +10,8 @@ export class Formation {
     postcode : number;
     desc : string; 
 
-    constructor(name: string, begin: Date, end: Date, etablishment: string, city: string, postcode: number, desc:string) {
-        this.name = name;
+    constructor(title: string, begin: Date, end: Date, etablishment: string, city: string, postcode: number, desc:string) {
+        this.title = title;
         this.begin = begin;
         this.end = end; 
         this.etablishment = etablishment;
