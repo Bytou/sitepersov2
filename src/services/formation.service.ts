@@ -1,4 +1,4 @@
-import { Formation } from "src/models/formation";
+import { Formation } from "src/models/formation.model";
 import { BasicService } from "./basic.service";
 
 export class FormationService extends BasicService{
