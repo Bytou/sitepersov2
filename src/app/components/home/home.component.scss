@@ -42,10 +42,10 @@
                 border: 1px solid $grey;
                 border-radius: 10px;
                 box-shadow: 5px 5px 5px rgba(0,0,0,0.7);
-            }
-            :hover {
-                cursor: pointer;
-                transform: scale(1.2); 
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.2); 
+                }
             }
         }
     }

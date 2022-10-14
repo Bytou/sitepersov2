@@ -50,13 +50,58 @@ body {
     margin-top: 2%;
     overflow: auto;
 
-    .box-element {
-        width: 40%;
-        height: 30%;
-        margin: 3%;
+    .box-element-md {
+        transition: all .2s;
+        width: 43%;
+        height: 25%;
+        margin: 2%;
         padding: 1%;
         float: left;
         border: solid lightgrey;
         border-radius: 10px;
+        h1 {
+            font-size: 3vh;
+            margin: 0%;
+        }
+        h2 {
+            font-size: 2vh;
+        }
+        p {
+            font-size: 1.7vh;
+        }
+        &:hover {
+            background-color: $backColor;
+            cursor: pointer;
+            transform: scale(1.05); 
+            ;
+        }
+    }
+
+    .box-element-lg {
+        transition: all .2s;
+        width: 80%;
+        height: 25%;
+        margin-top: 4%;
+        margin-left: 8%;
+        margin-right: 8%;
+        padding: 1%;
+        border: solid lightgrey;
+        border-radius: 10px;
+        h1 {
+            font-size: 3vh;
+            margin: 0%;
+        }
+        h2 {
+            font-size: 2vh;
+        }
+        p {
+            font-size: 1.7vh;
+        }
+        &:hover {
+            background-color: $backColor;
+            cursor: pointer;
+            transform: scale(1.05); 
+            ;
+        }
     }
 }
