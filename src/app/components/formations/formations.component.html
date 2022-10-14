@@ -2,7 +2,7 @@
 
 <div class="content" > 
     
-    <div class="box-element-md" *ngFor="let item of formation">
+    <div class="box-element-lg" *ngFor="let item of formation">
         <h1>{{ item.title }}</h1>
         <h2>{{ item.etablishment }}, {{item.city}} {{item.postcode}}</h2>
         <p>De {{ item.getBeginToString() }} à {{ item.getEndToString() }}</p>
